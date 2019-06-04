@@ -7,6 +7,7 @@ img {
   max-width: 100%;
 }
 
+/* google 폰트 사용 */
 header h1 {
   font-family: 'Alfa Slab One', cursive;
   color: white;
@@ -15,6 +16,7 @@ header h1 {
   letter-spacing: 0.5vw;
 }
 
+/* backgroundImg */
 html {
   background-image: url("./img/backgroundImg.jpg");
   background-position: center;
@@ -22,6 +24,7 @@ html {
   background-size: cover;
 }
 
+/* flex display */
 .container {
   display: flex;
   flex-direction: column;
@@ -76,4 +79,8 @@ header {
 
 #music-search {
   width: 25vw;
+}
+
+#disqus_thread {
+  z-index: 1;
 }
