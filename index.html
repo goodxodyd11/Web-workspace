@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./index_css.css">
+  <!-- Google font -->
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134427599-1"></script>
   <script>
@@ -29,13 +29,15 @@
       <div class="control-panel">
         <div class="playing-view">
           <section class="widget">
-
+            <!-- 재생 시 음악 앨범을 보여주기 위한 칸 -->
           </section>
           <section class="player">
+            <!-- 실제 음악을 재생하는 audio Tag -->
             <audio class="music-player" controls="controls" src="" autplay=""></audio>
           </section>
         </div>
         <section class="search">
+          <!-- 아티스트 검색 칸 -->
           <form class="search-form">
             <input type="text" name="music-search" id="music-search" placeholder="Search for an Artist">
             <input type="submit" name="button" value="Search..." id="search-button">
@@ -47,7 +49,6 @@
 
       </section>
     </div>
-    <script type='text/javascript' src="setting.js"></script>
     <script type="text/javascript" src="main_js.js"></script>
 
     <div id="disqus_thread"></div>
