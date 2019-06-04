@@ -1,0 +1,79 @@
+* {
+box-sizing: border-box;
+margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+header h1 {
+  font-family: 'Alfa Slab One', cursive;
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  letter-spacing: 0.5vw;
+}
+
+html {
+  background-image: url("./img/backgroundImg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 2% 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0% 0% 3% 0%;
+}
+
+.playing-view {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.widget {
+  text-align: center;
+}
+
+.player {
+  padding-top: 2%;
+}
+
+.search {
+  flex-basis: 40%;
+  padding: 2% 0%;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-form input {
+  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+#music-search {
+  width: 25vw;
+}

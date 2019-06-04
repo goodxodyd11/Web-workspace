@@ -1,46 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Jeong Tae Yong</title>
-<meta charset="utf-8">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134427599-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-134427599-1');
-</script>
-
-</head>
-<body>
-  <h1> <a href = "index.html">WEB </a></h1>
-  <ol>
-    <li><a href = "1.html">HTML</a></li>
-    <li><a href = "2.html">CSS</a></li>
-    <li><a href = "3.html">JavaScript</a></li> </ol>
-
-<ul>
-  <li> Jeong Tae Yong </li> </ul>
-
-
-<h2>程太鏞</h2>
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7PZoTqDwQIc"
- frameborder="0" allow="accelerometer; autoplay; encrypted-media;
- gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
-<img src="human.png" width="150"><br>
-This is my 1st Web Page.<br>
-It will be used for study myself. 2019-02-11 23:20 <br>
-<p>
-  <div id="disqus_thread"></div>
+  <head>
+    <title>My Open Music</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./index_css.css">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134427599-1"></script>
   <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134427599-1');
+  </script>
+  </head>
+  <body>
+
+    <div class="container">
+      <header>
+        <h1>My Open Music</h1>
+      </header>
+      <div class="control-panel">
+        <div class="playing-view">
+          <section class="widget">
+
+          </section>
+          <section class="player">
+            <audio class="music-player" controls="controls" src="" autplay=""></audio>
+          </section>
+        </div>
+        <section class="search">
+          <form class="search-form">
+            <input type="text" name="music-search" id="music-search" placeholder="Search for an Artist">
+            <input type="submit" name="button" value="Search..." id="search-button">
+          </form>
+        </section>
+      </div>
+      <section class="results">
+
+
+      </section>
+    </div>
+    <script type='text/javascript' src="setting.js"></script>
+    <script type="text/javascript" src="main_js.js"></script>
+
+    <!-- <div id="disqus_thread"></div> -->
+<script>
   /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
   /*
   var disqus_config = function () {
   this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
@@ -48,26 +62,29 @@ It will be used for study myself. 2019-02-11 23:20 <br>
   };
   */
   (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://jeong-tae-yong.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
+    var d = document,
+      s = d.createElement('script');
+    s.src = 'https://jeong-tae-yong.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
   })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                              </p>
-                              <!--Start of Tawk.to Script-->
-                             <script type="text/javascript">
-                             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-                             (function(){
-                             var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                             s1.async=true;
-                             s1.src='https://embed.tawk.to/5c63b6ae7cf662208c954c9f/default';
-                             s1.charset='UTF-8';
-                             s1.setAttribute('crossorigin','*');
-                             s0.parentNode.insertBefore(s1,s0);
-                             })();
-                             </script>
-                             <!--End of Tawk.to Script-->
-</body>
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {},
+    Tawk_LoadStart = new Date();
+  (function() {
+    var s1 = document.createElement("script"),
+      s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/5c63b6ae7cf662208c954c9f/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
+  </body>
 </html>
