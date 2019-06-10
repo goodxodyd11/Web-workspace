@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./index_css.css">
   <!-- Google font -->
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134427599-1"></script>
   <script>
@@ -24,36 +25,41 @@
 
     <div class="container">
       <header>
-        <h1>My Open Music</h1>
+        <h1 onclick="resetPage()">My Open Music</h1>
       </header>
-      <div class="control-panel">
-        <div class="playing-view">
-          <section class="widget">
+      <div class="mainDiv">
+        <div class="viewDiv">
+          <section class="widgetDiv">
             <!-- 재생 시 음악 앨범을 보여주기 위한 칸 -->
           </section>
-          <section class="player">
+          <section class="playerSection">
             <!-- 실제 음악을 재생하는 audio Tag -->
-            <audio class="music-player" controls="controls" src="" autplay=""></audio>
+            <audio class="music_player" controls="controls" src="" autplay=""></audio>
           </section>
         </div>
-        <section class="search">
+        <section class="searchSection">
           <!-- 아티스트 검색 칸 -->
-          <form class="search-form">
-            <input type="text" name="music-search" id="music-search" placeholder="Search for an Artist">
-            <input type="submit" name="button" value="Search..." id="search-button">
+          <form class="search_form">
+            <input type="text" name="music-search" id="music_search" placeholder="Search your Artists">
+            <input type="submit" name="button" value="Search" id="search_button">
           </form>
         </section>
       </div>
       <section class="results">
-
+        <!-- 소개 글 표시 -->
+        <pre>
+          Welcome!
+          Search with your favorite artist name!
+          Enjoy It Thanks.
+        </pre>
 
       </section>
-    </div>
+
     <script type="text/javascript" src="main_js.js"></script>
 
     <div id="disqus_thread"></div>
+    </div>
 <script>
-
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -65,24 +71,26 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
 */
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
-s.src = 'https://myopenmusic.disqus.com/embed.js';
+s.src = 'https://jeong-tae-yong.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <!--Start of Tawk.to Script-->
-                             <script type="text/javascript">
-                             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-                             (function(){
-                             var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                             s1.async=true;
-                             s1.src='https://embed.tawk.to/5c63b6ae7cf662208c954c9f/default';
-                             s1.charset='UTF-8';
-                             s1.setAttribute('crossorigin','*');
-                             s0.parentNode.insertBefore(s1,s0);
-                             })();
-                             </script>
-                             <!--End of Tawk.to Script-->
+                            </p>
+                            <!--Start of Tawk.to Script-->
+                           <script type="text/javascript">
+                           var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                           (function(){
+                           var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                           s1.async=true;
+                           s1.src='https://embed.tawk.to/5c63b6ae7cf662208c954c9f/default';
+                           s1.charset='UTF-8';
+                           s1.setAttribute('crossorigin','*');
+                           s0.parentNode.insertBefore(s1,s0);
+                           })();
+                           </script>
+                           <!--End of Tawk.to Script-->
+<!--End of Tawk.to Script-->
   </body>
 </html>
