@@ -1,27 +1,38 @@
 * {
-box-sizing: border-box;
-margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  color: #35017F;
+  text-align: center;
+}
+
+#music_search {
+  text-align: left;
 }
 
 img {
   max-width: 100%;
 }
 
-/* google 폰트 사용 */
 header h1 {
-  font-family: 'Alfa Slab One', cursive;
-  color: white;
-  text-align: center;
-  font-size: 3vw;
+  font-family: 'Fugaz One', cursive;
+  color: #35017F;
+  font-size: 4vw;
   letter-spacing: 0.5vw;
+  cursor: pointer;
 }
 
-/* backgroundImg */
+pre {
+    font-family: 'Fugaz One', cursive;
+    font-size : 2.5vw;
+  color: #35017F;
+}
+
+/* 배경 이미지 설정 */
 html {
-  background-image: url("./img/backgroundImg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(./img/backgroundImg2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
   background-size: cover;
+
 }
 
 /* flex display */
@@ -30,57 +41,107 @@ html {
   flex-direction: column;
 }
 
-header {
-  padding: 2% 0%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.control-panel {
+.mainDiv {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 0% 0% 3% 0%;
+  margin-bottom:3%;
 }
 
-.playing-view {
+.viewDiv {
   flex-basis: 60%;
   display: flex;
   flex-direction: column;
 }
 
-.widget {
-  text-align: center;
+header {
+  padding: 3% 0%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
 }
 
-.player {
+.widgetDiv .widget-text {
+  flex-basis: 25%;
+}
+
+.widget-text {
+  padding: 0% 0% 3% 0%;
+}
+
+.widgetDiv .track {
+  flex-basis: 25%;
+}
+
+.widgetDiv .trackArt {
+  width: 10vw;
+  height: 10vw;
+}
+
+.playerSection {
   padding-top: 2%;
 }
 
-.search {
+.searchSection {
   flex-basis: 40%;
   padding: 2% 0%;
 }
 
-.search-form {
+.search_form {
   width: 100%;
 }
 
-.search-form input {
-  font-size: 1.1rem;
-  font-family: 'Raleway', sans-serif;
-  cursor: pointer;
-}
-
-#music-search {
+#music_search {
   width: 25vw;
 }
 
-#disqus_thread {
-  z-index: 1;
+.results {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.artist {
+  cursor: pointer;
+  flex-basis: 27%;
+  margin-bottom: 5%;
+}
+
+.albumArt {
+  width: 20vw;
+  display: block;
+  margin: auto;
+  border-radius: 9%;
+  box-shadow: 4px -6px 10px #888889;
+}
+
+.sort-bar {
+  flex-basis: 100%;
+  padding-bottom: 2%;
+}
+
+.track {
+  cursor: pointer;
+  flex-basis: 19%;
+  margin: 2% 0%;
+}
+
+.trackArt {
+  width: 14vw;
+  height: 14vw;
+  display: block;
+  margin: auto;
+  border-radius: 3%;
+  box-shadow:  4px -6px 10px #888889;
+}
+
+.trackTitle {
+  font-weight: bold;
 }
