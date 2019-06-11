@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./index_css.css">
   <!-- Google font -->
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134427599-1"></script>
+  <!-- Search Box Icon -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -23,37 +24,42 @@
   </head>
   <body>
 
-    <div class="container">
-      <header>
-        <h1 onclick="resetPage()">My Open Music</h1>
-      </header>
-      <div class="mainDiv">
-        <div class="viewDiv">
-          <section class="widgetDiv">
-            <!-- 재생 시 음악 앨범을 보여주기 위한 칸 -->
-          </section>
-          <section class="playerSection">
-            <!-- 실제 음악을 재생하는 audio Tag -->
-            <audio class="music_player" controls="controls" src="" autplay=""></audio>
-          </section>
-        </div>
-        <section class="searchSection">
-          <!-- 아티스트 검색 칸 -->
-          <form class="search_form">
-            <input type="text" name="music-search" id="music_search" placeholder="Search your Artists">
-            <input type="submit" name="button" value="Search" id="search_button">
-          </form>
+  <div class="container">
+    <header>
+      <h1 onclick="resetPage()">My Open Music</h1>
+    </header>
+    <div class="mainDiv">
+      <div class="viewDiv">
+        <section class="widgetDiv">
+          <!-- 재생 시 음악 앨범을 보여주기 위한 칸 -->
+        </section>
+        <section class="playerSection">
+          <!-- 실제 음악을 재생하는 audio Tag -->
+          <audio class="music_player" controls="controls" src="" autplay=""></audio>
         </section>
       </div>
-      <section class="results">
-        <!-- 소개 글 표시 -->
-        <pre>
+      <section class="searchSection">
+        <!-- 아티스트 검색 칸 -->
+        <form class="search_form">
+          <div class="box">
+            <div class="container-1">
+              <span class="icon"><i class="fa fa-search fa-2x" ></i></span>
+              <input type="search" id="music_search" name="music-search" placeholder="Search..." />
+            </div>
+          </div>
+          <input type="submit" name="button" value="Search" id="search_button">
+        </form>
+      </section>
+    </div>
+    <section class="results">
+      <!-- 소개 글 표시 -->
+      <pre>
           Welcome!
           Search with your favorite artist name!
           Enjoy It Thanks.
         </pre>
 
-      </section>
+    </section>
 
     <script type="text/javascript" src="main_js.js"></script>
     </div>
